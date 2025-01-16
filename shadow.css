@@ -1,0 +1,222 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --fs-big-100:2.3rem;
+    --fs-big-200:1.5rem;
+    
+    --fs-small-100:1rem;
+    --fs-small-200:0.7rem;
+}
+html{
+    color:white;
+}
+.navigation{
+    background-color: white;
+    color: black;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top:0px;
+    border-bottom: 2px solid black;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+}
+.active .navigation{
+    background-color:rgb(10, 22, 58);
+    border-bottom: 1px solid white;
+    color: white;
+}
+.logo{
+    font-size: var(--fs-big-100);
+    font-weight: 900;
+}
+.iconslist{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 21px;
+}
+#sun{
+    position: absolute;
+    width: 60px;
+    height: 50px;
+    background-image: url(sun.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: rotate(0deg);
+    transition-duration: 2.5s;
+ }
+ #sun{
+    width: 3.1rem;
+    cursor: pointer;
+}
+.active#sun{ 
+    transform: rotate(360deg);
+    transition-duration: 2.5s;
+    background-image: url(moon.svg);
+   }
+   .bdfullall{
+    background-color: white;
+    transition-duration: 2.5s;
+   }
+   .active.bdfullall{
+    background-color: black;
+    transition-duration: 2.5s;
+    color: white;
+   }
+.bodyall{
+    display: grid;
+    align-items: center;
+    margin: 10px;
+    width: 100vw;
+    height: 100vh;
+justify-content: center;}
+.cntrfull{
+ background-color:rgb(18, 6, 46);
+ color: white;
+ width: 80vw;
+ padding-bottom: 41px;
+ padding-top:32px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-wrap: wrap;
+ gap: 10px;
+}
+.active .cntrfull{
+    background-color: rgb(53, 10, 94);
+    transition-duration: 2.5s;
+    color: white;
+}
+.cntrfull > div{
+    border: 1px solid rgb(194, 184, 184);
+}
+.child{
+    height: 45vh;
+    width: 35vw;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.smallchild{
+    border: 1px solid rgb(194, 178, 178);
+    min-height: 20vh;
+    width: 35vw;
+}
+.shapetraingle{
+    background-color: greenyellow;
+    height: 15vh;
+    width: 28vh;
+    clip-path: polygon(0% 0%,100% 0%,50% 100%);
+    box-shadow:1px 1px 20px red ;
+}
+.shapetrainglea{
+    background-color: greenyellow;
+    height: 15vh;
+    width: 30vh;
+    clip-path: polygon(0% 0%,100% 0%,50% 100%);
+    filter:drop-shadow(1px 1px 10px red);
+}
+.avatar{
+    font-size: 5rem;
+    width: 28vw;
+    height: 15vh;
+    box-shadow : 1px 1px 10px blueviolet ;
+}
+.avatara{
+    font-size: 5rem;
+    width: 20vw;
+    height: 20vh;
+    filter :drop-shadow( 1px 1px 10px blueviolet) ;
+}
+.headertxt{
+    text-align: center;
+    padding: 9px;
+    text-decoration: underline;
+}
+.textlist{
+    text-align: center;
+    list-style: none;
+    line-height: 21px;
+}
+/* this is thrid set  */
+
+.avatarc{
+    font-size: 6vw;
+    width: 28vw;
+    height: 15vh;
+    border: 2px solid white;
+    box-shadow: 0px 0px 20px 9px blueviolet;
+}
+.avatard{
+    font-size: 6vw;
+    width: 28vw;
+    height: 15vh;
+    border: 1px solid blueviolet;
+    filter: drop-shadow(12px 45px  1px  rgb(227, 223, 231));
+}
+
+/* ths is fourth set  */
+.avatare{
+    font-size: 6vw;
+    width: 28vw;
+    height: 15vh;
+    border: 1px solid blueviolet;
+    text-shadow: 20px 41px 3px  blueviolet;
+}
+.avatarf{
+    font-size: 6vw;
+    width: 28vw;
+    height: 15vh;
+    border: 21px solid rgb(242, 239, 247);
+  
+}
+.footertxt{
+    color: greenyellow;
+    background-color: black;
+    height: 200px;
+}
+.hdrtxt{
+    height: 100px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120px;
+}
+.shadowhdbg{
+    font-size: 3rem;
+}
+.shadoweffect{
+    font-size:2rem;
+    text-align: center;
+    padding: 5px;
+    text-decoration: underline;
+}
+.listname{
+    padding-left:55px ;
+    padding-top: 21px;
+    font-size: 1.3rem;
+}
+/* responsive in phone  */
+
+@media (max-width:500px) {
+    .textlist{
+        text-align: center;
+        list-style: none;
+        line-height:0.8rem ;
+        line-height: 18px;
+    }
+    .smallchild{
+        border: 1px solid rgb(194, 178, 178);
+        min-height: 20vh;
+        width: 35vw;
+    }
+}

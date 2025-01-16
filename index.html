@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="shadow.css">
+    <title>Shadow effects</title>
+</head>
+<body class="bdfullall">
+    <nav class="navigation">
+        <div class="logo">mzk</div> 
+        <div class="iconslist"><div id="sun" onclick="Animatedtoggle()" alt=""> </div></div>
+        </div>   
+     </nav> 
+    <div class="bodyall">
+    <div class="hdrtxt">
+        <div class="shadowhdbg">shadow effect</div>
+    </div>
+    <div class="cntrfull">
+        <div class="smallchild">
+            <h3 class="headertxt">clip-path (div)</h3>
+            <ul>
+                <li class="textlist">NOT work</li>
+                <li class="textlist"> box-shadow:1px 1px 20px red ;</li>
+                <li class="textlist">border-shadow:</li>
+            </ul>
+        </div>
+        <div class="smallchild">
+            <h3 class="headertxt">clip-path (div)</h3>
+            <ul>
+                <li class="textlist">NOT work</li>
+                <li class="textlist"> filter:drop-shadow(1px 1px 20px red) ;</li>
+                <li class="textlist">filter:drop-shadow()</li>
+            </ul>    
+        </div>
+        <div class="child">
+            <div class="shapetraingle">0</div>
+        </div>
+        <div class="child">
+            <div class="shapetrainglea">0</div>
+        </div>
+        <!-- second set  -->
+        <div class="smallchild">
+            <h3 class="headertxt">SVG imag</h3>
+            <ul>
+                <li class="textlist">IT work</li>
+                <li class="textlist"> box-shadow:1px 1px 20px blueviolute ;</li>
+                <li class="textlist">box-shadow:</li>
+            </ul>
+        </div>
+        <div class="smallchild">
+            <h3 class="headertxt">SVG imag</h3>
+            <ul>
+                <li class="textlist">IT work</li>
+                <li class="textlist"> filter :drop-shadow( 1px 1px 10px blueviolet) ;</li>
+                <li class="textlist"> filter :drop-shadow()</li>
+            </ul>    
+        </div>
+        <div class="child">
+            <img src="avatar.svg" class="avatar"  alt="">
+        </div>
+        <div class="child">
+            <img src="avatar.svg" class="avatara"  alt="">
+        </div>
+        <!-- this is third set -->
+        <div class="smallchild">
+            <h3 class="headertxt">TEXT</h3>
+            <ul>
+                <li class="textlist">IT work</li>
+                <li class="textlist">    border: 2px solid white; <br>
+                    box-shadow: 0px 0px 20px 9px blueviolet;</li>
+                <li class="textlist">box-shadow:</li>
+            </ul>
+        </div>
+        <div class="smallchild">
+            <h3 class="headertxt"> TEXT</h3>
+            <ul>
+                <li class="textlist">IT work</li>
+                <li class="textlist">     border: 1px solid blueviolet; <br>
+                    filter: drop-shadow(12px 45px  1px  rgb(227, 223, 231));</li>
+                    <li class="textlist"> effect text , cntr </li>
+                    <li class="textlist"> filter :drop-shadow()</li>
+            </ul>    
+        </div>
+        <div class="child">
+            <p class="avatarc">avatar</p>
+        </div>
+        <div class="child">
+            <p class="avatard" >avatar</p>
+        </div>
+        <!-- this is fourth set  -->
+        <div class="smallchild">
+            <h3 class="headertxt">TEXT</h3>
+            <ul>
+                <li class="textlist">IT work</li>
+                <li class="textlist">    border: 1px solid blueviolet; <br>
+                    text-shadow: 20px 41px 3px  blueviolet;</li>
+                <li class="textlist"> effect text only </li>    
+                <li class="textlist">text-shadow:</li>
+            </ul>
+        </div>
+        <div class="smallchild">
+            <h3 class="headertxt"> TEXT</h3>
+            <ul>
+                <li class="textlist">IT work</li>
+                    <li class="textlist"> border</li>
+            </ul>    
+        </div>
+        <div class="child">
+            <p class="avatare">avatar</p>
+        </div>
+        <div class="child">
+            <p class="avatarf" >avatar</p>
+        </div>
+    </div>
+    <div class="footertxt"><p class="shadoweffect">  shadow effect </p>
+      <ul class="listname">
+        <li class="effectname">box-shadow:</li>
+        <li class="effectname">filter:drop-shadow() ;</li>
+        <li class="effectname">text-shadow:</li>
+      </ul>
+    </div>
+    </div>
+    <script src="shadow.js"></script>
+</body>
+</html>
